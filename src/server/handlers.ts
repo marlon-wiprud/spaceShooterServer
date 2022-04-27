@@ -22,6 +22,8 @@ export const handleLogin: RequestHandler = (req, res) => {
         if (!address) throw new Error("please provide address")
         if (!signature) throw new Error("please provide signature")
 
+        console.log("verifying: ", address, signature)
+
         const authToken = verifyAuth(address, signature)
         res.json({ authToken })
 

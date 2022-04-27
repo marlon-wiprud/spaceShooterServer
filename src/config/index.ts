@@ -4,6 +4,6 @@ export interface Config {
 }
 
 export const config: Config = {
-    authKey: process.env.AUTH_KEY || "",
-    port: process.env.PORT || 3000
+    authKey: process.env.AUTH_KEY || "abc123",
+    port: process.env.PORT || 3001
 }

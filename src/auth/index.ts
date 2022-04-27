@@ -56,6 +56,7 @@ export const verifyAuth = (address: string, signature: string) => {
 
 
     clearNonce(address)
+
     return generateJwt(address)
 }
 

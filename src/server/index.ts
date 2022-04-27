@@ -1,7 +1,7 @@
 import express from "express"
 import cors from "cors"
 import { handleGenerateNonce, handleLogin } from "./handlers"
-import { middlewareVerifyAuth } from "./middleware"
+// import { middlewareVerifyAuth } from "./middleware"
 
 
 
@@ -18,7 +18,7 @@ export const newServer = () => {
 
     const openRouterV1 = newRouter()
     const authRouterV1 = newRouter()
-    authRouterV1.use(middlewareVerifyAuth)
+    // authRouterV1.use(middlewareVerifyAuth)
 
     openRouterV1.post("/loginNonce", handleGenerateNonce)
     openRouterV1.post("/login", handleLogin)
