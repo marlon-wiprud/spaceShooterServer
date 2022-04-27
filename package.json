@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint . --fix",
     "test": "jest",
-    "start": "npx nodemon ./src/main.ts"
+    "start": "npx nodemon ./src/main.ts",
+    "build": "npx tsc"
   },
   "author": "Marlon Wiprud",
   "license": "ISC",
